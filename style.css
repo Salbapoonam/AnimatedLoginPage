@@ -1,0 +1,169 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg, #89f7fe, #66a6ff);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: background-animation 6s infinite alternate ease-in-out;
+}
+
+@keyframes background-animation {
+    0% {
+        background: linear-gradient(120deg, #89f7fe, #66a6ff);
+    }
+    50% {
+        background: linear-gradient(120deg, #66a6ff, #8ec5fc);
+    }
+    100% {
+        background: linear-gradient(120deg, #8ec5fc, #e0c3fc);
+    }
+}
+
+.wrapper {
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    animation: fade-in 1.5s ease-out;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    animation: slide-in 1.2s ease-out;
+}
+
+@keyframes slide-in {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px 40px 10px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+.input-box input:focus {
+    border: 1px solid #66a6ff;
+    box-shadow: 0 0 8px rgba(102, 166, 255, 0.6);
+}
+
+.input-box i {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #666;
+    animation: pop-in 0.8s ease-in-out;
+}
+
+@keyframes pop-in {
+    0% {
+        transform: translateY(-50%) scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(-50%) scale(1);
+        opacity: 1;
+    }
+}
+
+.remember-forget {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.remember-forget a {
+    text-decoration: none;
+    color: #66a6ff;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.remember-forget a:hover {
+    color: #007bff;
+    transform: scale(1.1);
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(120deg, #66a6ff, #89f7fe);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.5s, transform 0.3s;
+}
+
+.btn:hover {
+    background: linear-gradient(120deg, #89f7fe, #66a6ff);
+    transform: scale(1.05);
+}
+
+.registratin-link {
+    text-align: center;
+    font-size: 14px;
+}
+
+.registratin-link a {
+    color: #66a6ff;
+    text-decoration: none;
+    transition: color 0.3s, letter-spacing 0.3s;
+}
+
+.registratin-link a:hover {
+    color: #007bff;
+    letter-spacing: 1px;
+}
+
+/* echo "# Login-Page-Poonam" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Salbapoonam/Login-Page-Poonam.git
+git push -u origin main
+https://github.com/Salbapoonam/Login-Page-Poonam.git */
